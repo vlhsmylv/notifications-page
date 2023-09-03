@@ -37,16 +37,16 @@
       class="mx-5 max-w-[700px] bg-white rounded-2xl p-7 flex flex-col gap-4"
     >
       <header class="flex justify-between items-center">
-        <h3 class="flex gap-3 text-2xl font-semibold">
+        <h1 class="flex gap-3 text-2xl font-semibold">
           <span> Notifications </span>
           <span
             class="py-1-imp px-3 rounded-lg text-base bg-blue-900 text-white"
             >3</span
           >
-        </h3>
+        </h1>
         <p class="text-gray-500 cursor-pointer mark-hover">Mark all as read</p>
       </header>
-      <section id="notifications">
+      <section id="notifications" tabindex="0">
         <div class="notification active">
           <div class="indicator-container">
             <div class="content-indicators">
@@ -213,7 +213,7 @@
       </section>
     </main>
 
-    <div class="attribution">
+    <div class="attribution" role="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
