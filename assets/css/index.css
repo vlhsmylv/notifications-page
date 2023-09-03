@@ -25,11 +25,8 @@
   display: flex;
   flex-direction: column;
   gap: 13px;
-  /* * YOU CAN MAKE IT INNER CONTAINER WITH SCROLL */
-  /* max-height: 600px;
-	 */
-  /* overflow-y: auto;
-	 */
+  max-height: 600px;
+  overflow-y: auto;
 }
 #notifications .active {
   background: var(--notification-bg);
