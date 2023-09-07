@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+:root {
+  --notification-bg: #f7f9ff;
+  --gray-indicator: #b5b7bf;
+  --bold-text-color: #1e2025;
+  --gray-info: #74767f;
+  --bold-gray: #5e636e;
+  --unread-box: #e75957;
+  --link-blue: #0a2b69;
+  --border-gray: #eee;
+  --hover-blue: #2c4982;
+}
+* {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+}
+.py-1-imp {
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}
+.mark-hover:hover {
+  color: var(--hover-blue) !important;
+}
+#notifications {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+#notifications .active {
+  background: var(--notification-bg);
+}
+#notifications .notification {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 15px;
+  border-radius: 10px;
+}
+#notifications .notification .indicator-container {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+#notifications .notification .indicator-container .content-indicators {
+  display: flex;
+  gap: 20px;
+}
+#notifications
+  .notification
+  .indicator-container
+  .content-indicators
+  .text-container
+  .top-paragraph
+  .name-indicator {
+  font-weight: 700;
+  color: var(--bold-text-color);
+  cursor: pointer;
+}
+#notifications
+  .notification
+  .indicator-container
+  .content-indicators
+  .text-container
+  .top-paragraph
+  .name-indicator:hover {
+  color: var(--hover-blue) !important;
+}
+#notifications
+  .notification
+  .indicator-container
+  .content-indicators
+  .text-container
+  .top-paragraph
+  .info {
+  color: var(--gray-info);
+}
+#notifications
+  .notification
+  .indicator-container
+  .content-indicators
+  .text-container
+  .top-paragraph
+  .post-indicator {
+  font-weight: 700;
+  color: var(--bold-gray);
+}
+#notifications
+  .notification
+  .indicator-container
+  .content-indicators
+  .text-container
+  .top-paragraph
+  .post-indicator:hover {
+  color: var(--hover-blue);
+}
+#notifications
+  .notification
+  .indicator-container
+  .content-indicators
+  .text-container
+  .top-paragraph
+  .link {
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--link-blue);
+}
+#notifications
+  .notification
+  .indicator-container
+  .content-indicators
+  .text-container
+  .top-paragraph
+  .link:hover {
+  color: var(--hover-blue);
+}
+#notifications
+  .notification
+  .indicator-container
+  .content-indicators
+  .text-container
+  .top-paragraph
+  .unread {
+  width: 8px;
+  height: 8px;
+  background: var(--unread-box);
+  border-radius: 50%;
+  display: inline-flex;
+  margin-bottom: 1.5px;
+}
+#notifications
+  .notification
+  .indicator-container
+  .content-indicators
+  .text-container
+  .time-indicator {
+  color: var(--gray-indicator);
+}
+#notifications .notification .message {
+  border-radius: 3px;
+  border: 1px solid var(--border-gray);
+  color: var(--gray-info);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: calc(48px + 20px);
+}
+#notifications .notification .message:hover {
+  background: var(--notification-bg);
+  cursor: pointer;
+  border: 1px solid var(--notification-bg);
+}
+@media screen and (max-width: 750px) {
+  body {
+    background: white !important;
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+  }
+  main {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    padding: 0px !important;
+    margin: 20px !important;
+  }
+}
