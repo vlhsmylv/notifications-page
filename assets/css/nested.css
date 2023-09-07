@@ -29,8 +29,6 @@
   display: flex;
   flex-direction: column;
   gap: 13px;
-  max-height: 600px;
-  overflow-y: auto;
 
   .active {
     background: var(--notification-bg);

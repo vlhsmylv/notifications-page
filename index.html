@@ -30,11 +30,11 @@
     </style>
   </head>
   <body
-    class="h-full lg:py-0 lg:my-10 bg-gray-100 flex flex-col gap-5 justify-center items-center"
+    class="flex flex-col gap-5 justify-center items-center min-h-screen lg:bg-gray-100"
   >
     <!-- TODO: NOTIFICATION PHOTOS RESPONSIVE -->
     <main
-      class="mx-5 max-w-[700px] bg-white rounded-2xl p-7 flex flex-col gap-4"
+      class="mt-10 mx-5 max-w-[700px] bg-white rounded-2xl p-7 flex flex-col gap-4"
     >
       <header class="flex justify-between items-center">
         <h1 class="flex gap-3 text-2xl font-semibold">
@@ -46,7 +46,7 @@
         </h1>
         <p class="text-gray-500 cursor-pointer mark-hover">Mark all as read</p>
       </header> 
-      <section id="notifications" tabindex="0" class="lg:max-h-[600px] lg:overflow-y-auto">
+      <section id="notifications" tabindex="0">
         <div class="notification active">
           <div class="indicator-container">
             <div class="content-indicators">
@@ -213,7 +213,7 @@
       </section>
     </main>
 
-    <div class="attribution">
+    <div class="mb-10 attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
